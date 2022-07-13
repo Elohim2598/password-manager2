@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+### Algorithm & Approach
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a fully responsive Web App. Beautifully made with React. It saves data to local storage.
 
-## Available Scripts
+I decided to break the user interface into five main components to keep it simple.
+1.Header component that has the search-box and a button that brings up the popup form.
+2.Content component that displays the filtered Cards if the user has already typed something into the search-box. Otherwise it will display all Cards.
+3.Card component that displays the card structure and also has the handlers for the different features (Show/hide button, Edit button, Delete button), it also includes the Copy to Clipboard button and all the JSX related code.
+4.Popup component, it's a very simple popup menu that only contains the code to close the popup.
+5.PopupForm component, it contains the form that is shown when the user clicks the Add Card Button (The PLUS ICON +) or Edit button.
+Every component has comments to explain the various chunks of code.
 
-In the project directory, you can run:
+### Technical Dependencies & Libraries
 
-### `npm start`
+Code editor: "VS Code 1.69.0"
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Libraries & Dependencies:
+"react": "^18.2.0",
+"react-dom": "^18.2.0",
+"react-scripts": "5.0.1",
+"react-copy-to-clipboard": "^5.1.0". This package makes it easy to copy text to Clipboard,
+"react-spring": "^9.4.5". This is a spring-physics based animation library that I have used to create an animation which the user can see on load,
+"sweetalert2": "^11.4.20". A really beautiful way to create popup boxes. I have used it to create the Copy to Clipboard alert.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+APIs:
+"Clearbit API". I have used this API to get the logos for the Card component.
 
-### `npm test`
+### Limitations
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+As a Front-End developer I had my limitations with Back-End, that's why I couldn't provide the CRUD REST API endpoints but even though the Web App works perfectly fine and has solid functionality.
